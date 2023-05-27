@@ -37,12 +37,9 @@ def get_all_users():
 
 @app.route("/user/vote/<user_id>", methods=["POST"])
 def vote_user(user_id):
-    vote_count = request.form.get("users")
-
-
-    if redis_db.exists(user_id):
-        # Inkrementuj liczbę głosów użytkownika
-        redis_db.hincrby(user_id, "votes", int(vote_count))
+    vote_count = redis_db.hget("users", user_id)
+    if vote_count:
+        redis_db.hincrby(user_id, "users", int(1))
         return "Vote recorded for user {}".format(user_id)
     else:
         return "User {} does not exist".format(user_id)
@@ -51,4 +48,3 @@ def vote_user(user_id):
 if __name__ == "__main__":
 
     app.run(host='0.0.0.0', port=5000)
-
