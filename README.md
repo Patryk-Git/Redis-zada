@@ -8,14 +8,14 @@ Zadanie z
   d) Uruchomić plik products_records.py. Zapełni on bazę danych paroma rekordami
   c) Uruchomić main.py czyli nasz główny serwer
   d) Jeżeli serwer jest uruchomiony to przy użyciu postmana alboo insomnie można wysyłać requesty pod endpoint
-3. Dla osób bez znajomości pyhona:
-  a) Pobrać projekt i otworzyć go w IDE (Pycharm)
-  b) Otworzyć konsolę i wejść do folderu.
-  c) Wywołać następujące komendy:
-    python -m venv venv
-    venv\Scripts\activate.bat
-    python -m pip install -r requirements.txt
-    python product_records.py
-    python main.py
-    d) Jeżeli serwer jest uruchomiony to przy użyciu postmana alboo insomnie można wysyłać requesty pod endpoint
+3. Dla osób bez znajomości pyhona:<br />
+  a) Pobrać projekt i otworzyć go w IDE (Pycharm)<br />
+  b) Otworzyć konsolę i wejść do folderu.<br />
+  c) Wywołać następujące komendy:<br />
+    python -m venv venv<br />
+    venv\Scripts\activate.bat<br />
+    python -m pip install -r requirements.txt<br />
+    python product_records.py<br />
+    python main.py<br />
+    d) Jeżeli serwer jest uruchomiony to przy użyciu postmana alboo insomnie można wysyłać requesty pod endpoint<br />
     
